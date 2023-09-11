@@ -3,21 +3,12 @@
     "maps": [
         {
             "name": "Player",
-            "id": "a4c17dfe-9cab-456f-a2b7-13672d31a30a",
+            "id": "d166a420-ba10-47f0-8f7c-70a9d88bcdae",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "b24618ee-201d-4eb3-9173-a48cd5935fee",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Look",
-                    "type": "Value",
-                    "id": "b686add9-d7b6-4c69-8777-4d8c2eef483d",
+                    "id": "2c5d3b1a-7152-4a79-8be0-8a26d660df14",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -26,7 +17,7 @@
                 {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "9d9eb06f-e01b-4c70-9615-de1c15f0b356",
+                    "id": "5b3ef77c-55a0-466e-9d6a-d433b6eb2813",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -35,7 +26,7 @@
                 {
                     "name": "Aim",
                     "type": "Button",
-                    "id": "eb26bef3-13af-491e-a44a-5ffc7bb2e8d7",
+                    "id": "a66b1ee8-abf4-4ecb-9e47-d88c6a067290",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -44,17 +35,26 @@
                 {
                     "name": "Shooting",
                     "type": "Button",
-                    "id": "d3f1064b-fdb4-4076-9691-3347010dc013",
+                    "id": "9dcfe952-f5c2-48ec-b78a-48a819244c43",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "0918175f-d1d6-4719-bc63-8e28bf170072",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
                     "name": "WASD",
-                    "id": "74f30061-aebc-4c93-b06b-40042073d458",
+                    "id": "e46b1011-3d7d-492f-ba33-16e14a222256",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -65,7 +65,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "1aa1a6c9-f0ef-4e85-a854-6c93cb22dc1f",
+                    "id": "5b041f2c-168f-45ac-9ad7-c2052367c7d2",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -76,7 +76,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "b94a9f48-3428-4dd9-9834-7c1a481fef69",
+                    "id": "1bdfd419-c73a-4f22-bf1c-bbac86064fd3",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -87,7 +87,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "b1abf187-68b0-45a5-9932-872dd323aae7",
+                    "id": "6bdcee4f-7dea-4993-ab11-d6efaf73724b",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -98,7 +98,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "3ded7971-47ea-49b3-a56c-a25b65b4409c",
+                    "id": "adb7abea-f010-454c-a247-8a80f95ec05c",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -109,18 +109,7 @@
                 },
                 {
                     "name": "",
-                    "id": "559ba253-795e-4350-97e1-803074c73089",
-                    "path": "<Mouse>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "57c98050-4ab3-42bf-b012-19261309100f",
+                    "id": "f8f5b0a2-498c-43a3-8a00-c633883008eb",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -131,7 +120,7 @@
                 },
                 {
                     "name": "",
-                    "id": "265fdc42-33fb-4797-b5f2-65137f79d378",
+                    "id": "daa02b4c-befb-4d48-8064-f61bfb9cd3e3",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
@@ -142,12 +131,23 @@
                 },
                 {
                     "name": "",
-                    "id": "fdec2d5f-84c3-4571-83a8-b87531240a51",
+                    "id": "b21a8fa3-9db7-49a4-a519-50bba8eb28e1",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Shooting",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "629739c4-ac07-464b-b9fc-ab033a81c044",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

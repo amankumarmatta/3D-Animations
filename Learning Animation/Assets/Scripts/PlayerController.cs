@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float gravityValue = -9.81f;
     [SerializeField]
-    private float rotationSpeed = .8f;
+    private float rotationSpeed = 5f;
 
     private CharacterController controller;
     private Vector3 playerVelocity;
@@ -23,10 +23,13 @@ public class PlayerController : MonoBehaviour
     private InputAction moveAction;
     private InputAction jumpAction;
 
-
     private bool groundedPlayer;
 
-
+    private void Awake() 
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+    
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -35,7 +38,6 @@ public class PlayerController : MonoBehaviour
 
         moveAction = playerInput.actions["Move"];
         jumpAction = playerInput.actions["Jump"];
-
     }
 
     void Update()
@@ -60,10 +62,5 @@ public class PlayerController : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
-
-        //Rotation
-        float targetAngle = cameraTransform.eulerAngles.y;
-        Quaternion rotation = Quaternion.Euler(0, targetAngle, 0);
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }

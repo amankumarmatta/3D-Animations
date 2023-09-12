@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private PlayerInput playerInput;
     private Transform cameraTransform;
 
+    //Cached Player Inputs instead of repeating using strings
     private InputAction moveAction;
     private InputAction jumpAction;
 
